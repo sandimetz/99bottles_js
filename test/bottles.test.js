@@ -71,4 +71,9 @@ describe('Bottles', () => {
       '99 bottles of beer on the wall.\n';
     expect(new Bottles().verses(2, 0)).toBe(expected);
   });
+
+  test('the whole song', () => {
+    const bottles = new Bottles();
+    expect(bottles.song()).toBe(bottles.verses(99, 0));
+  });
 });
