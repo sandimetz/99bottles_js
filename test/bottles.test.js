@@ -1,3 +1,5 @@
+import { Bottles } from '../lib/bottles';
+
 describe('Bottles', () => {
   test('the first verse', () => {
     const expected = '99 bottles of beer on the wall, ' +
