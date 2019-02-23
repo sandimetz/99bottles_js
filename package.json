@@ -4,12 +4,50 @@
     "@babel/core": "^7.9.6",
     "@babel/plugin-transform-modules-commonjs": "^7.9.6",
     "babel-jest": "^26.0.1",
+    "eslint": "^6.8.0",
     "jest": "^26.0.1"
   },
   "scripts": {
+    "eslint": "eslint lib test",
     "test": "jest"
   },
   "jest": {
     "testEnvironment": "node"
+  },
+  "babel": {
+    "plugins": [
+      "@babel/plugin-transform-modules-commonjs"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "jest": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2015,
+      "sourceType": "module"
+    },
+    "rules": {
+      "eqeqeq": [
+        "error",
+        "always"
+      ],
+      "indent": [
+        "error",
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ]
+    }
   }
 }
