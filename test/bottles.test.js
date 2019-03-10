@@ -1,5 +1,3 @@
-import { Bottles } from '../lib/bottles';
-
 describe('Bottles', () => {
   test('the first verse', () => {
     const expected =
