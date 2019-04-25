@@ -1,5 +1,11 @@
 import { BottleVerse, CountdownSong } from '../lib/bottles';
 
+class VerseFake {
+  static lyrics(number) {
+    return `This is verse ${number}.\n`;
+  }
+}
+
 describe('CountdownSong', () => {
   test('a couple verses', () => {
     const expected =
