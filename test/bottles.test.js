@@ -50,7 +50,6 @@ describe('BottleVerse', () => {
       'Take one down and pass it around, ' +
       '98 bottles of beer on the wall.\n';
     expect(BottleVerse.lyrics(99)).toBe(expected);
-    expect(new BottleVerse(99).lyrics()).toBe(expected);
   });
 
   test('another verse', () => {
@@ -58,7 +57,7 @@ describe('BottleVerse', () => {
       '3 bottles of beer.\n' +
       'Take one down and pass it around, ' +
       '2 bottles of beer on the wall.\n';
-    expect(new BottleVerse(3).lyrics()).toBe(expected);
+    expect(BottleVerse.lyrics(3)).toBe(expected);
   });
 
   test('verse 2', () => {
@@ -66,7 +65,7 @@ describe('BottleVerse', () => {
       '2 bottles of beer.\n' +
       'Take one down and pass it around, ' +
       '1 bottle of beer on the wall.\n';
-    expect(new BottleVerse(2).lyrics()).toBe(expected);
+    expect(BottleVerse.lyrics(2)).toBe(expected);
   });
 
   test('verse 1', () => {
@@ -74,7 +73,7 @@ describe('BottleVerse', () => {
       '1 bottle of beer.\n' +
       'Take it down and pass it around, ' +
       'no more bottles of beer on the wall.\n';
-    expect(new BottleVerse(1).lyrics()).toBe(expected);
+    expect(BottleVerse.lyrics(1)).toBe(expected);
   });
 
   test('verse 0', () => {
@@ -82,6 +81,6 @@ describe('BottleVerse', () => {
       'no more bottles of beer.\n' +
       'Go to the store and buy some more, ' +
       '99 bottles of beer on the wall.\n';
-    expect(new BottleVerse(0).lyrics()).toBe(expected);
+    expect(BottleVerse.lyrics(0)).toBe(expected);
   });
 });
