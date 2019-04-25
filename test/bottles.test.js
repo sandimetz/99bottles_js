@@ -10,6 +10,10 @@ class FakeVerse {
   }
 }
 
+FakeVerse.lyrics = number => {
+  return new FakeVerse(number).lyrics();
+};
+
 describe('CountDownSong', () => {
   test('a verse', () => {
     const expected = 'This is verse 99.\n';
