@@ -6,7 +6,7 @@ class FakeVerse {
   }
 
   lyrics() {
-    // what goes here?
+    return `This is verse ${this.number}.\n`;
   }
 }
 
