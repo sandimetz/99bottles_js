@@ -24,6 +24,20 @@ describe('CountdownSong', () => {
 
   test('the whole song', () => {
     const expected =
+      'This is verse 47.\n' +
+      '\n' +
+      'This is verse 46.\n' +
+      '\n' +
+      'This is verse 45.\n' +
+      '\n' +
+      'This is verse 44.\n' +
+      '\n' +
+      'This is verse 43.\n';
+    expect(new CountdownSong(VerseFake, 47, 43).song()).toBe(expected);
+  });
+
+  test('the whole song', () => {
+    const expected =
 `99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 
