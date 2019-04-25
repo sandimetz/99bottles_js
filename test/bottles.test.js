@@ -12,6 +12,13 @@ class FakeVerse {
 
 describe('CountDownSong', () => {
   test('a couple verses', () => {
+    const expected = 'This is verse 99.\n' +
+      '\n' +
+      'This is verse 98.\n';
+    expect(new CountDownSong(FakeVerse).verses(99, 98)).toBe(expected);
+  });
+
+  test('a couple verses', () => {
     const expected = '99 bottles of beer on the wall, ' +
       '99 bottles of beer.\n' +
       'Take one down and pass it around, ' +
