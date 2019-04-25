@@ -1,6 +1,6 @@
 import { Bottles, BottleVerse } from '../lib/bottles';
 
-describe('Bottles', () => {
+describe('CountdownSong', () => {
   test('a couple verses', () => {
     const expected =
       '99 bottles of beer on the wall, ' +
