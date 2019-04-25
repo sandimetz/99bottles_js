@@ -1,5 +1,15 @@
 import { BottleVerse, CountDownSong } from '../lib/bottles';
 
+class FakeVerse {
+  constructor(number) {
+    this.number = number;
+  }
+
+  lyrics() {
+    // what goes here?
+  }
+}
+
 describe('CountDownSong', () => {
   test('a couple verses', () => {
     const expected = '99 bottles of beer on the wall, ' +
