@@ -1,4 +1,4 @@
-import { Bottles, BottleVerse, CountDownSong } from '../lib/bottles';
+import { BottleVerse, CountDownSong } from '../lib/bottles';
 
 describe('CountDownSong', () => {
   test('a couple verses', () => {
