@@ -7,6 +7,11 @@ class VerseFake {
 }
 
 describe('CountdownSong', () => {
+  test('verse', () => {
+    const expected = 'This is verse 500.\n';
+    expect(new CountdownSong(VerseFake).verse(500)).toBe(expected);
+  });
+
   test('a couple verses', () => {
     const expected =
       'This is verse 99.\n' +
