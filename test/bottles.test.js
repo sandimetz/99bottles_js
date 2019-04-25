@@ -22,7 +22,7 @@ describe('CountdownSong', () => {
     expect(new CountdownSong(VerseFake).verses(99, 97)).toBe(expected);
   });
 
-  test('the whole song', () => {
+  test('song', () => {
     const expected =
       'This is verse 47.\n' +
       '\n' +
