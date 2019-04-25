@@ -8,6 +8,9 @@ class VerseFake {
 
 describe('CountdownSong', () => {
   test('a couple verses', () => {
+  });
+
+  test('a couple verses', () => {
     const expected =
       '99 bottles of beer on the wall, ' +
       '99 bottles of beer.\n' +
