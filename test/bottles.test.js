@@ -1,4 +1,5 @@
 import { Bottles } from '../lib/bottles';
+import { downTo } from '../lib/helpers';
 
 describe('Bottles', () => {
   test('the first verse', () => {
@@ -81,6 +82,9 @@ describe('Bottles', () => {
 
   test('the whole song', () => {
     const bottles = new Bottles();
-    expect(bottles.song()).toBe(bottles.verses(99, 0));
+    const expected = downTo(99, 0)
+      .map(i => bottles.verse(i))
+      .join('\n');
+    expect(bottles.song()).toBe(expected);
   });
 });
