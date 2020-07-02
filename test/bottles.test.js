@@ -6,6 +6,12 @@ class VerseFake {
   }
 }
 
+const testPlaysVerseRole = rolePlayer => {
+  test('plays verse role', () => {
+    expect(rolePlayer).toHaveProperty('lyrics', expect.any(Function));
+  });
+};
+
 describe('CountdownSong', () => {
   test('verse', () => {
     const expected = 'This is verse 500.\n';
