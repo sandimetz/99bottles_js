@@ -109,3 +109,7 @@ describe('BottleVerse', () => {
     expect(BottleVerse.lyrics(0)).toBe(expected);
   });
 });
+
+describe('VerseFake', () => {
+  testPlaysVerseRole(VerseFake);
+});
