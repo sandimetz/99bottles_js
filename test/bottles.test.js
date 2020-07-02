@@ -44,6 +44,8 @@ describe('CountdownSong', () => {
 });
 
 describe('BottleVerse', () => {
+  testPlaysVerseRole(BottleVerse);
+
   test('verse general rule upper bound', () => {
     const expected =
       '99 bottles of beer on the wall, ' +
