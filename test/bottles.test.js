@@ -341,7 +341,7 @@ Go to the store and buy some more, 99 bottles of beer on the wall.
 });
 
 describe('BottleVerse', () => {
-  test('the first verse', () => {
+  test('verse general rule upper bound', () => {
     const expected =
       '99 bottles of beer on the wall, ' +
       '99 bottles of beer.\n' +
