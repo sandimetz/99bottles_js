@@ -350,7 +350,7 @@ describe('BottleVerse', () => {
     expect(BottleVerse.lyrics(99)).toBe(expected);
   });
 
-  test('another verse', () => {
+  test('verse general rule lower bound', () => {
     const expected =
       '3 bottles of beer on the wall, ' +
       '3 bottles of beer.\n' +
